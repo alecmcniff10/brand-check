@@ -64,28 +64,47 @@ a{color:inherit;text-decoration:none}
 
 /* Feature */
 .feature{
-  padding:64px 0 72px;border-bottom:1px solid var(--rule);
-  display:grid;grid-template-columns:1fr;gap:36px;
+  padding:48px 0 56px;border-bottom:1px solid var(--rule);
+  display:grid;grid-template-columns:1.55fr 1fr;gap:56px;align-items:start;
 }
-.feature .head{max-width:780px;margin:0 auto;text-align:center}
+.feature .head{text-align:left}
 .feature h1{
-  font-family:var(--serif);font-weight:500;font-size:64px;line-height:1.02;letter-spacing:-.02em;
-  color:var(--ink);margin:18px 0 22px;text-wrap:balance;
+  font-family:var(--serif);font-weight:500;font-size:42px;line-height:1.08;letter-spacing:-.015em;
+  color:var(--ink);margin:14px 0 16px;text-wrap:balance;
 }
 .feature h1 em{font-style:italic;color:var(--ink-2)}
 .feature .deck{
-  font-family:var(--serif);font-size:21px;line-height:1.5;color:var(--ink-2);
-  max-width:62ch;margin:0 auto 24px;text-wrap:pretty;
+  font-family:var(--serif);font-size:17px;line-height:1.5;color:var(--ink-2);
+  margin:0 0 18px;text-wrap:pretty;
 }
 .feature .byline{
   font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);
-  display:flex;justify-content:center;gap:14px;flex-wrap:wrap;
+  display:flex;justify-content:flex-start;gap:14px;flex-wrap:wrap;margin-bottom:24px;
 }
 .feature .byline .author{color:var(--ink);font-weight:500}
 .feature .hero-img{
-  width:100%;height:340px;position:relative;overflow:hidden;margin-top:8px;background:#1a1a1a;
+  width:100%;height:220px;position:relative;overflow:hidden;margin-top:0;background:#1a1a1a;
 }
 .feature .hero-img svg{position:absolute;inset:0;width:100%;height:100%}
+
+/* Sidebar (also from the archive) */
+.side-mod{padding-left:32px;border-left:1px solid var(--rule)}
+.side-mod h5{
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);
+  padding-bottom:12px;border-bottom:2px solid var(--ink);margin-bottom:18px;
+}
+.side-list{list-style:none;display:flex;flex-direction:column}
+.side-list li{padding:16px 0;border-bottom:1px solid var(--rule)}
+.side-list li:last-child{border-bottom:0}
+.side-list a{display:block}
+.side-list a:hover h6{color:var(--accent)}
+.side-list .eyebrow{font-size:10px;letter-spacing:.12em;margin-bottom:6px}
+.side-list .eyebrow .pip{width:6px;height:6px}
+.side-list h6{
+  font-family:var(--serif);font-weight:500;font-size:17px;line-height:1.25;color:var(--ink);
+  text-wrap:pretty;margin-bottom:6px;
+}
+.side-list .meta{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
 
 /* Section heading */
 .section-head{
@@ -102,11 +121,32 @@ a{color:inherit;text-decoration:none}
 .section-head .more:hover{color:var(--accent)}
 .section-head .more::after{content:"→"}
 
-/* Recent posts */
+/* Recent posts — simple title list on home */
 .recent{
-  display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px;
-  padding-bottom:64px;border-bottom:1px solid var(--rule);
+  display:flex;flex-direction:column;
+  padding-bottom:48px;border-bottom:1px solid var(--rule);
 }
+.recent li{list-style:none;border-bottom:1px solid var(--rule)}
+.recent li:last-child{border-bottom:0}
+.recent a.title-link{
+  display:grid;grid-template-columns:1fr auto;gap:32px;align-items:baseline;
+  padding:18px 0;
+}
+.recent a.title-link:hover h4{color:var(--accent)}
+.recent h4{
+  font-family:var(--serif);font-weight:500;font-size:21px;line-height:1.25;color:var(--ink);
+  text-wrap:pretty;
+}
+.recent .meta{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  white-space:nowrap;
+}
+
+/* (legacy card grid kept for category pages) */
+.recent.cards{
+  display:grid;grid-template-columns:1fr 1fr 1fr;gap:48px;padding-bottom:64px;
+}
+.recent.cards li,.recent.cards a.title-link{display:revert;padding:0;border:0}
 .post{display:flex;flex-direction:column}
 .post .eyebrow{margin-bottom:14px}
 .post h4{

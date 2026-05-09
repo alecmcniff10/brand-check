@@ -14,6 +14,10 @@
   POST MANIFEST — to add a new article:
     1. Create a new file in /posts/ (copy posts/_template.html)
     2. Add a new entry at the TOP of the array below
+       Optional fields:
+         "hero":    "assets/heroes/your-image.jpg"   (path to hero photo)
+         "heroAlt": "Short description of the photo"
+       If "hero" is omitted, the abstract stadium SVG is used as a fallback.
     3. Commit. GitHub Pages will redeploy in ~30 seconds.
   Newest post (index 0) becomes the "Latest post" hero.
   Up to 3 next posts render in the "From the archive" grid.
@@ -22,36 +26,214 @@
 <script type="application/json" id="posts-manifest">
 [
   {
-    "slug": "the-20m-handshake",
+    "slug": "draft-day-trademarks-why-the-first-contract-an-nfl-rookie-should-sign-might-be-with-the-uspto",
     "category": "NIL & Endorsements",
-    "title": "The $20M handshake: when a college quarterback's <em>likeness</em> outgrows the school that recruited him.",
-    "deck": "A Big Ten star's jump from a collective deal into a national footwear contract has triggered the messiest right-of-publicity fight since O'Bannon. Inside the contracts, the carve-outs, and the clause every athlete now wishes they had read twice.",
-    "author": "Alec R. Whitfield",
-    "readTime": "14 min read"
+    "title": "Draft Day Trademarks: Why the First Contract an NFL Rookie Should Sign Might Be With the USPTO",
+    "deck": "The USPTO's first-ever booth at the NFL Draft signals a shift: federal registration is becoming standard \"day one\" professional planning for rookies whose personal brands now arrive in the league fully formed.",
+    "author": "Alec McNiff",
+    "readTime": "5 min read"
   },
   {
-    "slug": "two-stripes-three-stripes",
-    "category": "Trademark",
-    "title": "Two stripes, three stripes, and the survey that sank a streetwear giant.",
-    "deck": "A Ninth Circuit panel tells us — yet again — that consumer confusion is a question of evidence, not vibes.",
-    "author": "Alec R. Whitfield",
-    "readTime": "9 min read"
+    "slug": "two-quarterback-trademark-strategies-signal-the-future-of-athlete-branding",
+    "category": "NIL & Endorsements",
+    "title": "Two Quarterback Trademark Strategies Signal the Future of Athlete Branding",
+    "deck": "On March 16, Caleb Williams Holding Inc. filed four trademark applications with the USPTO. Eleven days later, Fernando Mendoza filed two of his own.",
+    "author": "Alec McNiff",
+    "readTime": "3 min read",
+    "hero": "assets/heroes/quarterback-trademarks.jpg",
+    "heroAlt": "Quarterback on the field at twilight"
   },
   {
-    "slug": "clinically-proven",
-    "category": "Advertising Law",
-    "title": "\"Clinically proven\" without the clinic: the FTC's 2026 substantiation guidance, decoded.",
-    "deck": "What changed for influencer brand deals, what didn't, and the disclosure language your contract should already be using.",
-    "author": "Alec R. Whitfield",
+    "slug": "uspto-trademark-registration-series-part-7-common-pitfalls-in-trademark-registration",
+    "category": "Trademark · USPTO Series",
+    "title": "USPTO Trademark Registration Series: Part 7 – Common Pitfalls in Trademark Registration",
+    "deck": "We conclude this series on trademark registration by examining where otherwise viable applications often go wrong. Many applicants encounter refusals or abandon applications due to preventable mistakes.",
+    "author": "Alec McNiff",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "junk-fees-under-fire-mlb-ticket-pricing-practices-face-scrutiny-in-recent-consumer-class-actions",
+    "category": "Advertising · Sports",
+    "title": "Junk Fees Under Fire: MLB Ticket Pricing Practices Face Scrutiny in Recent Consumer Class Actions",
+    "deck": "Three recent consumer class actions against Major League Baseball clubs are testing whether mandatory add-on charges on ticket purchases amount to deceptive pricing under state consumer protection laws.",
+    "author": "Alec McNiff",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "rule-40-of-the-olympic-charter-an-exception-to-ordinary-trademark-law",
+    "category": "Trademark · Sports",
+    "title": "Rule 40 of the Olympic Charter: An Exception to Ordinary Trademark Law",
+    "deck": "Rule 40 of the Olympic Charter establishes a distinct regulatory framework governing advertising and promotional activity involving Olympic participants.",
+    "author": "Alec McNiff",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "uspto-trademark-registration-series-part-6-maintaining-and-enforcing-your-trademark-registration",
+    "category": "Trademark · USPTO Series",
+    "title": "USPTO Trademark Registration Series: Part 6 – Maintaining and Enforcing Your Trademark Registration",
+    "deck": "Obtaining a federal trademark registration from the U.S. Patent and Trademark Office (USPTO) is a meaningful milestone, but it is not the finish line.",
+    "author": "Alec McNiff",
     "readTime": "6 min read"
   },
   {
-    "slug": "sampling-drake-twice-removed",
+    "slug": "article-5-publication-opposition-and-path-to-allowance-registration",
+    "category": "Trademark",
+    "title": "USPTO Trademark Registration Series: Part 5 – Publication, Opposition, and Path to Allowance/Registration",
+    "deck": "Once an application has been approved by an examining attorney (whether after initial review or following responses to office actions) it advances to publication.",
+    "author": "Alec McNiff",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "uspto-trademark-registration-series-part-4-examination-and-responding-to-office-actions",
+    "category": "Trademark · USPTO Series",
+    "title": "USPTO Trademark Registration Series: Part 4 – Examination and Responding to Office Actions",
+    "deck": "Filing a trademark application is just the beginning of the registration process. After submission, each application is reviewed by the U.S.",
+    "author": "Alec McNiff",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "common-defenses-to-trademark-infringement",
+    "category": "Trademark",
+    "title": "Common Defenses to Trademark Infringement ",
+    "deck": "Trademark infringement occurs when one party uses a mark that is likely to cause confusion with another’s protected trademark, potentially misleading consumers about the source, affiliation, or quality of goods or services.",
+    "author": "Alec McNiff",
+    "readTime": "10 min read"
+  },
+  {
+    "slug": "why-the-uspto-refused-las-vegas-athletics-and-vegas-athletics",
+    "category": "Trademark · Sports",
+    "title": "Why the USPTO Refused “Las Vegas Athletics” and “Vegas Athletics”",
+    "deck": "After announcing their relocation to Nevada, the Oakland Athletics (now the Las Vegas Athletics) looked to secure trademark protection for names reflecting their new home.",
+    "author": "Alec McNiff",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "uspto-trademark-registration-series-part-3-preparing-and-filing-your-trademark-application",
+    "category": "Trademark · USPTO Series",
+    "title": "USPTO Trademark Registration Series: Part 3 – Preparing and Filing Your Trademark Application",
+    "deck": "This is the third installment in a seven-part series on the USPTO trademark registration process. The first article introduced trademarks, and discussed when federal registration makes strategic sense.",
+    "author": "Alec McNiff",
+    "readTime": "10 min read"
+  },
+  {
+    "slug": "uspto-trademark-registration-series-part-2-trademark-clearance",
+    "category": "Trademark · USPTO Series",
+    "title": "USPTO Trademark Registration Series: Part 2 – Trademark Clearance ",
+    "deck": "This is the second installment in a seven-part series on the USPTO trademark registration process. The first article discussed what trademarks are, the differences between common-law, state, and federal rights, and when federal registration makes strategic sense.",
+    "author": "Alec McNiff",
+    "readTime": "9 min read"
+  },
+  {
+    "slug": "uspto-trademark-registration-series-part-1-what-is-a-trademark-and-when-should-brands-register",
+    "category": "Trademark · USPTO Series",
+    "title": "USPTO Trademark Registration Series: Part 1 - What Is a Trademark and When Should Brands Register?",
+    "deck": "This is the first installment in a seven-part series on the USPTO trademark registration process. This series will cover every stage, from pre-filing preparations to post-registration maintenance, with practical insights and examples.",
+    "author": "Alec McNiff",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "lessons-from-the-new-york-jets-battle-over-gotham-city-football",
+    "category": "Trademark · Sports",
+    "title": "Lessons From the New York Jets’ Battle Over “Gotham City Football”",
+    "deck": "The New York Jets’ recent adoption of the phrase “Gotham City Football” through the NFL’s “Rivalries” alternate uniform program has triggered a familiar trademark problem: when does a branding phrase tied to a location become protectable?",
+    "author": "Alec McNiff",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "ninth-circuit-affirms-dismissal-in-hara-v-netflix-balancing-trademarks-and-artistic-freedom",
+    "category": "Trademark · Entertainment",
+    "title": "Ninth Circuit Affirms Dismissal in Hara v. Netflix: Balancing Trademarks and Artistic Freedom",
+    "deck": "The Ninth Circuit Court of Appeals recently affirmed the dismissal of a Lanham Act lawsuit brought by drag performer Vicky Vox against Netflix and related parties.",
+    "author": "Alec McNiff",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "corporate-boundaries-in-trademark-profit-awards-dewberry-group-inc-v-dewberry-engineers-inc",
+    "category": "Trademark",
+    "title": "Corporate Boundaries in Trademark Profit Awards: Dewberry Group, Inc. v. Dewberry Engineers, Inc.",
+    "deck": "The U.S. Supreme Court’s unanimous February 26, 2025, decision in Dewberry Group, Inc. v. Dewberry Engineers, Inc. , 604 U.S. 321 (2025) , marked a significant reaffirmation of corporate separateness in trademark infringement remedies.",
+    "author": "Alec McNiff",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "trademark-infringement-dilution-and-false-advertising-under-the-lanham-act",
+    "category": "Trademark",
+    "title": "Trademark Infringement, Dilution, and False Advertising Under the Lanham Act",
+    "deck": "The Lanham Act (15 U.S.C. § 1051 et seq .) is the primary federal statute governing trademarks and unfair competition. It provides protections against three distinct but related harms: trademark infringement, trademark dilution, and false advertising.",
+    "author": "Alec McNiff",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "nikes-total-90-trademark-revival-runs-into-reverse-confusion-claim",
+    "category": "Trademark",
+    "title": "Nike’s Total 90 Trademark Revival Runs Into Reverse Confusion Claim",
+    "deck": "Nike is defending its revived Total 90 soccer line against trademark infringement claims brought by a smaller company that obtained federal registration for the mark after Nike’s earlier registration lapsed.",
+    "author": "Alec McNiff",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "likelihood-of-confusion-isnt-one-test-why-circuit-differences-in-trademark-law-actually-matter",
+    "category": "Trademark",
+    "title": "Likelihood of Confusion Isn’t One Test: Why Circuit Differences in Trademark Law Actually Matter",
+    "deck": "A key element of any trademark infringement claim is the likelihood of confusion. A plaintiff must show that the defendant’s use of a mark is likely to confuse ordinary consumers as to the source, sponsorship, affiliation, or approval of the goods or services.",
+    "author": "Alec McNiff",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "navigating-the-2025-uspto-trademark-fee-changes",
+    "category": "Trademark",
+    "title": "Navigating the 2025 USPTO Trademark Fee Changes",
+    "deck": "The United States Patent and Trademark Office (USPTO) introduced major adjustments to trademark fees on January 18, 2025, with some Madrid Protocol-related changes effective February 18, 2025.",
+    "author": "Alec McNiff",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "why-softsoap-almost-never-became-a-registered-trademark-understanding-descriptive-marks-and-the-path-to-protection",
+    "category": "Trademark",
+    "title": "Why “Softsoap” Almost Never Became a Registered Trademark: Understanding Descriptive Marks and the Path to Protection",
+    "deck": "When creating brand names, many entrepreneurs wish to use words that describe what the product does, such as “Pure Water,” or “Soft Soap.” Although this impulse is understandable, it can cause issues when applying for federal trademark registration.",
+    "author": "Alec McNiff",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "practical-considerations-before-suing-for-trademark-infringement",
+    "category": "Trademark",
+    "title": "Practical Considerations Before Suing for Trademark Infringement",
+    "deck": "Filing a trademark infringement lawsuit can be a powerful way to protect a brand, but it shouldn’t be undertaken without carefully weighing the strategic and practical factors that determine whether litigation is worthwhile.",
+    "author": "Alec McNiff",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "the-cost-of-ignoring-music-licenses-behrs-case",
     "category": "Copyright · Music",
-    "title": "Sampling Drake, twice removed: the chain-of-title problem nobody is solving.",
-    "deck": "When a sync license clears the master but not the underlying interpolation, the bill comes due in arbitration.",
-    "author": "Alec R. Whitfield",
-    "readTime": "11 min read"
+    "title": "The Cost of Ignoring Music Licenses: Behr's Case",
+    "deck": "In November 2025, ABKCO Music &amp; Records, Inc. (owner of the Rolling Stones’ pre-1971 catalog) filed a federal copyright infringement lawsuit against Behr Paint in the Central District of California.",
+    "author": "Alec McNiff",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "what-is-a-trademark",
+    "category": "Trademark",
+    "title": "What Is a Trademark?",
+    "deck": "Understanding Trademarks and How They Differ from Copyrights and Patents Intellectual property law protects different kinds of creations in different ways.",
+    "author": "Alec McNiff",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "advances-explained-why-free-money-isnt-free",
+    "category": "Music & Entertainment",
+    "title": "Advances Explained: Why “Free Money” Isn’t Free",
+    "deck": "Signing a record deal is an exciting milestone for most artists. One of the most appealing aspects is the advance: an upfront payment from the label intended to cover recording costs, marketing, and other expenses.",
+    "author": "Alec McNiff",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "360-deals-considerations-for-an-artists-long-term-income",
+    "category": "Music & Entertainment",
+    "title": "360 Deals: Considerations For An Artist's Long-Term Income",
+    "deck": "The way artists make money in today’s music industry has changed drastically. Album sales no longer dominate revenue streams. Instead, different buckets like touring, merchandise, streaming, endorsements, and licensing often represent a larger share of an artist’s income.",
+    "author": "Alec McNiff",
+    "readTime": "3 min read"
   }
 ]
 </script>
@@ -64,7 +246,6 @@
     <div class="right">
       <a href="#archive">Archive</a>
       <a href="#about">About</a>
-      <a href="#newsletter">Subscribe →</a>
     </div>
   </div>
 
@@ -74,47 +255,29 @@
   </header>
 
   <nav class="catnav">
-    <a href="index.html" class="active">Latest</a>
-    <a href="#">Trademark</a>
-    <a href="#">Copyright</a>
-    <a href="#">Advertising</a>
-    <a href="#">NIL &amp; Brand Deals</a>
-    <a href="#">Music &amp; Entertainment</a>
+    <a href="index.html" data-cat="">Latest</a>
+    <a href="?cat=Trademark" data-cat="Trademark">Trademark</a>
+    <a href="?cat=Copyright" data-cat="Copyright">Copyright</a>
+    <a href="?cat=Advertising" data-cat="Advertising">Advertising</a>
+    <a href="?cat=NIL" data-cat="NIL">NIL &amp; Brand Deals</a>
+    <a href="?cat=Music" data-cat="Music">Music &amp; Entertainment</a>
   </nav>
 
   <article class="feature" id="latest"></article>
 
-  <div class="section-head" id="archive">
-    <h3>From the archive</h3>
-    <a href="#" class="more">All articles</a>
+  <div class="section-head" id="archive" style="flex-direction:column;align-items:flex-start;gap:14px;padding-bottom:48px;border-bottom:1px solid var(--rule)">
+    <h3 id="archive-heading">More from the archive</h3>
+    <a href="?cat=Trademark" class="more" id="archive-more">All articles</a>
   </div>
 
   <section class="recent" id="recent"></section>
 
-  <section class="news" id="newsletter">
-    <div>
-      <div class="lab">▌ The Friday Brief</div>
-      <h6>One email. Every Friday. The week in brand law, in 600 words.</h6>
-    </div>
-    <div>
-      <p style="margin-bottom:18px">Joined by in-house counsel, agents, and athletic-department GCs. No CLE pitch, no sponsored takes.</p>
-      <form onsubmit="event.preventDefault();this.querySelector('button').textContent='✓ Subscribed'">
-        <div class="row">
-          <input type="email" placeholder="you@firm.com" required />
-          <button type="submit">Subscribe</button>
-        </div>
-        <div class="tos">Unsubscribe in one click.</div>
-      </form>
-    </div>
-  </section>
-
   <section class="about" id="about">
-    <div class="ava">A<span style="color:var(--accent)">W</span></div>
+    <div class="ava">A<span style="color:var(--accent)">M</span></div>
     <div class="who">
       <div class="lab">About the editor</div>
-      <h4>Alec R. Whitfield</h4>
-      <p>Brand-protection lawyer, former in-house at a global apparel brand, now writing the things he wishes someone had handed him on day one. Trademark prosecution, copyright disputes, advertising substantiation, and the increasingly load-bearing space between an athlete's name and a brand's check.</p>
-      <a href="#" class="cta">Read the bio →</a>
+      <h4>Alec McNiff</h4>
+      <p>I’m an attorney at a large, national law firm. My practice focuses on brand protection and intellectual property law, including trademark, copyright, and advertising matters. While my day-to-day work spans a variety of industries, I’m especially interested in how brand protection law plays out in sports, entertainment, and the broader creator economy. This blog is where I explore that intersection by diving into NIL and licensing deals, trademark battles over team names and logos, copyright issues in music and film, advertising controversies, and other related developments. If you’re a brand owner, a rights holder, or just someone who follows the business side of sports and entertainment, I hope you find something useful here.</p>
     </div>
   </section>
 
@@ -124,9 +287,6 @@
       <div class="foot-links">
         <a href="#archive">Archive</a>
         <a href="#about">About</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#">Contact</a>
-        <a href="#">RSS</a>
       </div>
     </div>
     <div class="foot-bot">
@@ -146,54 +306,29 @@
   // Read post manifest and render the home page.
   const posts = JSON.parse(document.getElementById('posts-manifest').textContent);
 
-  // Latest = posts[0]
-  const latest = posts[0];
-  if (latest) {
-    document.getElementById('latest').innerHTML = `
-      <div class="head">
-        <a href="posts/${latest.slug}.html" class="feature-link" style="display:block">
-          <span class="eyebrow"><span class="pip"></span>Latest post · ${latest.category}</span>
-          <h1>${latest.title}</h1>
-        </a>
-        <p class="deck">${latest.deck}</p>
-        <div class="byline">
-          <span class="author">${latest.author}</span>
-          <span>·</span>
-          <span>${latest.readTime}</span>
-        </div>
-      </div>
-      <a href="posts/${latest.slug}.html" style="display:block">
-        <div class="hero-img">
-          <svg viewBox="0 0 1080 340" preserveAspectRatio="none">
-            <defs>
-              <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#3a3631"/>
-                <stop offset="1" stop-color="#1a1a1a"/>
-              </linearGradient>
-            </defs>
-            <rect width="1080" height="340" fill="url(#g1)"/>
-            <path d="M0,290 Q540,90 1080,290 L1080,340 L0,340 Z" fill="#0f0e0c"/>
-            <path d="M0,300 Q540,120 1080,300" stroke="#a4123f" stroke-width="1.4" fill="none" opacity=".55"/>
-            <g stroke="#f6f3ee" stroke-width="0.6" opacity=".22">
-              <line x1="120" y1="340" x2="200" y2="220"/>
-              <line x1="320" y1="340" x2="360" y2="220"/>
-              <line x1="540" y1="340" x2="540" y2="210"/>
-              <line x1="760" y1="340" x2="720" y2="220"/>
-              <line x1="940" y1="340" x2="880" y2="220"/>
-            </g>
-            <g stroke="#a4123f" stroke-width="1" opacity=".7">
-              <line x1="160" y1="40" x2="160" y2="200"/>
-              <circle cx="160" cy="40" r="3" fill="#a4123f"/>
-            </g>
-          </svg>
-        </div>
-      </a>
-    `;
-  }
+  // Category filter mapping: nav key -> match function against post.category
+  const catFilters = {
+    'Trademark':   p => /trademark/i.test(p.category),
+    'Copyright':   p => /copyright/i.test(p.category),
+    'Advertising': p => /advertising/i.test(p.category),
+    'NIL':         p => /nil|endorsement/i.test(p.category),
+    'Music':       p => /music|entertainment/i.test(p.category)
+  };
 
-  // Archive = next 3
-  const archive = posts.slice(1, 4);
-  document.getElementById('recent').innerHTML = archive.map(p => `
+  const params = new URLSearchParams(location.search);
+  const activeCat = params.get('cat') || '';
+
+  // Mark active nav link
+  document.querySelectorAll('.catnav a').forEach(a => {
+    if ((a.dataset.cat || '') === activeCat) a.classList.add('active');
+  });
+
+  const featureEl = document.getElementById('latest');
+  const archiveHead = document.getElementById('archive-heading');
+  const archiveMore = document.getElementById('archive-more');
+  const recentEl = document.getElementById('recent');
+
+  const cardHtml = (p) => `
     <article class="post">
       <a href="posts/${p.slug}.html" class="card-link">
         <span class="eyebrow"><span class="pip"></span>${p.category}</span>
@@ -202,7 +337,91 @@
         <div class="byline">${p.author.replace(/^[A-Z]\w*/, m => m[0]+'.')} · ${p.readTime}</div>
       </a>
     </article>
-  `).join('');
+  `;
+
+  if (activeCat && catFilters[activeCat]) {
+    // Category view: hide hero, show all matching posts as cards
+    const labels = {Trademark:'Trademark', Copyright:'Copyright', Advertising:'Advertising', NIL:'NIL & Brand Deals', Music:'Music & Entertainment'};
+    featureEl.style.display = 'none';
+    archiveHead.textContent = labels[activeCat];
+    archiveMore.textContent = '← Back to latest';
+    archiveMore.href = 'index.html';
+    recentEl.classList.add('cards');
+    const filtered = posts.filter(catFilters[activeCat]);
+    if (filtered.length === 0) {
+      recentEl.innerHTML = `<p style="font-family:var(--serif);font-size:18px;color:var(--muted);grid-column:1/-1">No posts in this category yet.</p>`;
+    } else {
+      recentEl.innerHTML = filtered.map(cardHtml).join('');
+    }
+    document.title = labels[activeCat] + ' — Brand Check';
+  } else {
+    // Default home: latest on left + sidebar on right
+    const latest = posts[0];
+    const sidebarPosts = posts.slice(1, 5);
+    const archivePosts = posts.slice(5, 12);
+
+    if (latest) {
+      featureEl.innerHTML = `
+        <div class="head">
+          <a href="posts/${latest.slug}.html" class="feature-link" style="display:block">
+            <span class="eyebrow"><span class="pip"></span>Latest post · ${latest.category}</span>
+            <h1>${latest.title}</h1>
+          </a>
+          <p class="deck">${latest.deck}</p>
+          <div class="byline">
+            <span class="author">${latest.author}</span>
+            <span>·</span>
+            <span>${latest.readTime}</span>
+          </div>
+          <a href="posts/${latest.slug}.html" style="display:block">
+            <div class="hero-img">
+              ${latest.hero
+                ? `<img src="${latest.hero}" alt="${(latest.heroAlt || latest.title).replace(/"/g,'&quot;')}" style="width:100%;height:100%;object-fit:cover;display:block"/>`
+                : `<svg viewBox="0 0 1080 220" preserveAspectRatio="none">
+                    <defs>
+                      <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#3a3631"/>
+                        <stop offset="1" stop-color="#1a1a1a"/>
+                      </linearGradient>
+                    </defs>
+                    <rect width="1080" height="220" fill="url(#g1)"/>
+                    <path d="M0,180 Q540,40 1080,180 L1080,220 L0,220 Z" fill="#0f0e0c"/>
+                    <path d="M0,190 Q540,60 1080,190" stroke="#a4123f" stroke-width="1.4" fill="none" opacity=".55"/>
+                    <g stroke="#f6f3ee" stroke-width="0.6" opacity=".22">
+                      <line x1="120" y1="220" x2="200" y2="130"/>
+                      <line x1="320" y1="220" x2="360" y2="130"/>
+                      <line x1="540" y1="220" x2="540" y2="125"/>
+                      <line x1="760" y1="220" x2="720" y2="130"/>
+                      <line x1="940" y1="220" x2="880" y2="130"/>
+                    </g>
+                    <g stroke="#a4123f" stroke-width="1" opacity=".7">
+                      <line x1="160" y1="30" x2="160" y2="130"/>
+                      <circle cx="160" cy="30" r="3" fill="#a4123f"/>
+                    </g>
+                  </svg>`}
+            </div>
+          </a>
+        </div>
+        <aside class="side-mod">
+          <h5>Recent posts</h5>
+          <ul class="side-list">
+            ${sidebarPosts.map(p => `
+              <li>
+                <a href="posts/${p.slug}.html">
+                  <span class="eyebrow"><span class="pip"></span>${p.category}</span>
+                  <h6>${p.title}</h6>
+                  <div class="meta">${p.readTime}</div>
+                </a>
+              </li>
+            `).join('')}
+          </ul>
+        </aside>
+      `;
+    }
+    archiveMore.textContent = 'Browse all articles →';
+    archiveMore.href = '?cat=Trademark';
+    recentEl.innerHTML = '';
+  }
 </script>
 </body>
 </html>
