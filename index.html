@@ -15,8 +15,15 @@
     1. Create a new file in /posts/ (copy posts/_template.html)
     2. Add a new entry at the TOP of the array below
        Optional fields:
-         "hero":    "assets/heroes/your-image.jpg"   (path to hero photo)
-         "heroAlt": "Short description of the photo"
+         "hero":      "assets/heroes/your-image.jpg"   (path to hero photo)
+         "heroAlt":   "Short description of the photo"
+         "heroFocus": "center 30%"   (CSS object-position — controls which
+                                     part of the image stays visible when
+                                     it's cropped to fit. Examples:
+                                       "center top"     keep top of image
+                                       "center bottom"  keep bottom
+                                       "center 30%"     favor upper third
+                                       "center center"  default — middle)
        If "hero" is omitted, the abstract stadium SVG is used as a fallback.
     3. Commit. GitHub Pages will redeploy in ~30 seconds.
   Newest post (index 0) becomes the "Latest post" hero.
@@ -296,7 +303,19 @@
     <div class="who">
       <div class="lab">About the editor</div>
       <h4>Alec McNiff</h4>
-      <p>I’m an attorney at a large, national law firm. My practice focuses on brand protection and intellectual property law, including trademark, copyright, and advertising matters. While my day-to-day work spans a variety of industries, I’m especially interested in how brand protection law plays out in sports, entertainment, and the broader creator economy. This blog is where I explore that intersection by diving into NIL and licensing deals, trademark battles over team names and logos, copyright issues in music and film, advertising controversies, and other related developments. If you’re a brand owner, a rights holder, or just someone who follows the business side of sports and entertainment, I hope you find something useful here.</p>
+      <p>I’m an attorney at a national law firm where my practice focuses on brand protection and intellectual property law, including trademark, copyright, and advertising matters. I’m especially interested in how brand protection law plays out in sports, entertainment, and the broader creator economy. This blog is where I explore that intersection. If you’re a brand owner, rights holder, or just someone who follows the business side of sports and entertainment, I hope you find something useful here.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:22px;margin-top:18px">
+        <a class="cta" href="https://www.linkedin.com/in/alec-mcniff-b794749b/" target="_blank" rel="noopener noreferrer" style="margin-top:0">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width:12px;height:12px;fill:currentColor;vertical-align:-1px;margin-right:8px">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.29 2.38 4.29 5.48v6.26zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/>
+          </svg>Connect on LinkedIn
+        </a>
+        <a class="cta" href="https://x.com/Alec_McNiff" target="_blank" rel="noopener noreferrer" style="margin-top:0">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" style="width:11px;height:11px;fill:currentColor;vertical-align:0;margin-right:8px">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>Follow on X · @Alec_McNiff
+        </a>
+      </div>
     </div>
   </section>
 
@@ -395,7 +414,7 @@
           <a href="posts/${latest.slug}.html" style="display:block">
             <div class="hero-img">
               ${latest.hero
-                ? `<img src="${latest.hero}" alt="${(latest.heroAlt || latest.title).replace(/"/g,'&quot;')}" style="width:100%;height:100%;object-fit:cover;display:block"/>`
+                ? `<img src="${latest.hero}" alt="${(latest.heroAlt || latest.title).replace(/"/g,'&quot;')}" style="width:100%;height:100%;object-fit:cover;object-position:${latest.heroFocus || 'center center'};display:block"/>`
                 : `<svg viewBox="0 0 1080 220" preserveAspectRatio="none">
                     <defs>
                       <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">

@@ -1,0 +1,86 @@
+<!doctype html>
+<!--
+  =====================================================================
+  HOW TO USE THIS TEMPLATE
+  1. Save a copy in /posts/ named with your URL slug:
+       posts/your-slug-here.html
+  2. Replace the four PLACEHOLDERS marked with {{ }} below.
+  3. Paste your article body (HTML) inside <div class="body">.
+       - Wrap the first paragraph in <p class="lede"> for the drop-cap.
+       - Use <h2> for section headings, <h3> for sub-sections.
+       - Use <blockquote> for pull quotes.
+  4. Add a manifest entry to /index.html (see the comment block there).
+  5. Commit.
+  =====================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{{TITLE}} — Brand Check</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<div class="page">
+
+  <div class="util">
+    <div><a href="../index.html">← Back to Brand Check</a></div>
+    <div class="right">
+      <a href="../index.html#archive">Archive</a>
+    </div>
+  </div>
+
+  <header class="masthead" style="padding:36px 0 18px">
+    <a href="../index.html" class="wordmark" style="font-size:54px">Brand <span class="amp">Check</span></a>
+  </header>
+
+  <article class="article">
+    <span class="eyebrow"><span class="pip"></span>{{CATEGORY}}</span>
+    <h1>{{TITLE}}</h1>
+    <p class="deck">{{DECK}}</p>
+    <div class="byline">
+      <span class="author">Alec McNiff</span>
+      <span>·</span>
+      <span>{{READ_TIME}}</span>
+    </div>
+
+    <div class="body">
+
+<p class="lede">Paste your first paragraph here. The first letter will get a fancy red drop-cap automatically because of the "lede" class.</p>
+
+<p>Subsequent paragraphs go in plain &lt;p&gt; tags.</p>
+
+<h2>A section heading looks like this</h2>
+
+<p>More body copy.</p>
+
+<blockquote>A pull quote looks like this — italic, red left border.</blockquote>
+
+<p>Wrap up the article with a final paragraph.</p>
+
+<hr>
+
+<p style="font-size:14px;color:var(--muted);font-style:italic">This content is for general informational purposes only and does not constitute legal advice. Legal matters are fact-specific, and consultation with qualified counsel is recommended for individual circumstances.</p>
+    </div>
+
+    <div class="article-foot">
+      <a href="../index.html">← All posts</a>
+      <span>© 2026 Brand Check</span>
+    </div>
+  </article>
+
+  <footer>
+    <div class="foot-bot">
+      <div class="disclaimer">
+        <strong>Not legal advice.</strong> Brand Check is editorial commentary on developments in brand-protection law. Reading it does not create an attorney-client relationship.
+      </div>
+    </div>
+  </footer>
+
+</div>
+<script src="../assets/share.js" defer></script>
+</body>
+</html>
