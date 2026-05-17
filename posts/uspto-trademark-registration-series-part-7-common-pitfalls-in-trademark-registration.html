@@ -43,6 +43,16 @@
     <a href="../index.html" class="wordmark" style="font-size:54px">Brand <span class="amp">Check</span></a>
   </header>
 
+  <nav class="catnav">
+    <a href="../index.html">Latest</a>
+    <a href="../index.html?cat=Trademark" data-cat="Trademark">Trademark</a>
+    <a href="../index.html?cat=Copyright" data-cat="Copyright">Copyright</a>
+    <a href="../index.html?cat=Advertising" data-cat="Advertising">Advertising</a>
+    <a href="../index.html?cat=NIL" data-cat="NIL">NIL &amp; Brand Deals</a>
+    <a href="../index.html?cat=Music" data-cat="Music">Music &amp; Entertainment</a>
+  </nav>
+
+
   <article class="article">
     <span class="eyebrow"><span class="pip"></span>Trademark · USPTO Series</span>
     <h1>USPTO Trademark Registration Series: Part 7 – Common Pitfalls in Trademark Registration</h1>
@@ -94,5 +104,23 @@
 
 </div>
 <script src="../assets/share.js" defer></script>
+<script>
+  // Highlight the category nav link that matches this article's category.
+  (function(){
+    var eb = document.querySelector('.article .eyebrow');
+    if(!eb) return;
+    var cat = eb.textContent || '';
+    var match = '';
+    if(/trademark/i.test(cat)) match = 'Trademark';
+    else if(/copyright/i.test(cat)) match = 'Copyright';
+    else if(/advertising/i.test(cat)) match = 'Advertising';
+    else if(/nil|endorsement/i.test(cat)) match = 'NIL';
+    else if(/music|entertainment/i.test(cat)) match = 'Music';
+    if(!match) return;
+    document.querySelectorAll('.catnav a').forEach(function(a){
+      if(a.dataset && a.dataset.cat === match) a.classList.add('active');
+    });
+  })();
+</script>
 </body>
 </html>
